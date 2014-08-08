@@ -7,7 +7,8 @@ You can access it from [swaters86.github.io](http://swaters86.github.io/) or fro
 
 ### To Do 
 
-- Make it so IDs attributes and values are not genrated for healdine tags (Hexo Issue)
+
+- Make it so ID attributes and values are not genrated for healdine tags (Hexo Issue)
 
 - Make class names better by making them semantic 
 
