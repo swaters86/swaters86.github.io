@@ -1,0 +1,351 @@
+/** 
+ * This is the main stylesheet for StevenWaters.com 
+ * The format of this stylesheet is loosely based on Nicolas Gallagher's Idiomatic CSS Guideline: 
+ *  https://github.com/necolas/idiomatic-css
+ *
+ * Author: Steven Waters (aka HÃ¤agen-Dazs, aka Sven, aka German Boy)
+ *
+ * Date: 20140803
+ *
+ * Frameworks & Libraries: 
+ *  Google Font API
+ *  Normalize CSS: http://necolas.github.io/normalize.css;
+ *  FontAwesome: http://fontawesome.io;
+*/
+
+/* ==========================================================================
+   Declaring Styl Variables 
+   ========================================================================== */
+
+layout-width-1 = 650px
+layout-width-2 = 95%
+
+color-1 = #666
+color-2 = #333
+color-3 = #f9f9f9
+color-4 = #efefef
+color-5 = #e2e2e2
+
+
+/* ==========================================================================
+   Default Styles
+   ========================================================================== */
+
+body {
+  margin:0;
+  padding:0;
+  font-family:helvetica, verdana, arial;
+  color:color-1;
+  background:color-3;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin:0;
+  font-family: 'Arvo', serif;
+}
+
+h1 {font-size:5em;}
+
+h2 {
+  color:color-2;
+  font-size:2em;
+}
+
+h3 {font-size:1.2em;}
+
+h4 {font-size:1.1em;}
+
+h5 {font-size:1.0em;}
+
+a:link, 
+a:active, 
+a:visited {color:color-1;}
+
+a:hover {color:color-2;}
+
+p {line-height:2em;}
+
+img {width:100%;border:2px color-4 solid;}
+
+/* ==========================================================================
+   Main Containers
+   ========================================================================== */
+
+.strip {
+  width:100%;
+  height:20px;
+  background:color-2;
+}
+
+.masthead {
+  padding:10px;
+  background:color-5;
+  color:color-2;
+}
+
+/* Elements for the Branding Section
+   ========================================================================== */
+
+.branding {
+  width:layout-width-1;
+  margin:0 auto;
+}
+
+.branding h2 {
+  margin:10px 0 0 0;
+}
+
+.branding p {
+  line-height:1.5em;
+}
+
+.description {
+  width:layout-width-1;
+  margin:0 auto;
+  font-size:1.2em;
+}
+
+.container {
+  width:100%;
+  margin:0 auto;
+}
+
+/* Elemenets for the Footer Section
+   ========================================================================== */
+
+.footer {
+  border-top:1px color-5 solid;
+  border-bottom:1px color-5 solid;
+  padding:15px 0;
+  margin:20px auto;
+}
+
+.footer-container {
+  width:layout-width-1;
+  margin:0 auto;
+}
+
+/* ==========================================================================
+   Social Media Links 
+   ========================================================================== */
+
+.socialmedia-accounts {
+  display:inline;
+  padding:0;
+  list-style-type:none;
+}
+
+.socialmedia-accounts li {
+  display:inline;
+  text-align:center;
+}
+
+.socialmedia-accounts li a:link,
+.socialmedia-accounts li a:visited {
+  padding:11px;
+  text-decoration:none;
+}
+
+.socialmedia-accounts li a:hover {
+  text-decoration:none;
+  background:color-4;
+}
+
+/* ==========================================================================
+   Post Related Elements 
+   ========================================================================== */
+
+.post-item {
+  border-bottom:1px color-5 solid;
+  margin:10px auto;
+  width:layout-width-1;
+}
+
+.post .post-item {border:none;}
+
+.posts .post-item:last-child {border:none;}
+
+/* Elements for Post Headlines
+   ========================================================================== */
+
+.post h2, 
+.posts h2 {padding:20px 0 0 0;}
+
+.post h3, 
+.posts h3 {padding:20px 0 0 0;}
+
+h2 a:link, 
+h2 a:active, 
+h2 a:visited {
+ color:color-2;
+ text-decoration:none;
+}
+
+h1 a:link, 
+h1 a:active,
+ h1 a:visited {
+ color:color-2;
+ text-decoration:none;
+}
+
+/* Elements for Pagination
+   ========================================================================== */
+
+.pagination {
+  width:layout-width-1;
+  margin:0 auto;
+  padding:10px 0;
+}
+
+.page-number {padding:10px;}
+
+.current {
+  background:color-5;
+  color:color-1;
+}
+
+.pagination a:link, 
+.pagination a:active, 
+.pagination a:visited {padding:10px;}
+
+.pagination a:hover {background:color-4;}
+
+.prev {text-indent:-10px}
+
+/* Elements for Post Meta Data (Category, Date, Tags, etc information)
+   ========================================================================== */
+
+.post-meta {
+  padding:10px 0;
+  border-top:1px color-5 solid;
+  border-bottom:1px color-5 solid;
+}
+
+.post-meta li {
+  padding:5px 0 0 0;
+  list-style-type:none;
+}
+
+.post-meta label {font-weight:bold;}
+
+/* Elements for Sharing Posts
+   ========================================================================== */
+
+.share {
+  margin:0;
+  padding:0;
+  width:100px;
+  display:inline;
+}
+
+.share li {display:inline;}
+
+.share li a:link {padding:0 5px 0 0;}
+
+
+/* Elements for Syntax Highlighting
+   ========================================================================== */
+
+.highlight {
+  margin:10px 0
+  padding:10px;
+  background:color-2;
+  max-height:300px;
+  overflow:scroll;
+}
+
+.highlight a:link {
+  color:color-1;
+  text-align: right;
+  float:right;
+  padding:0 0 0 30px;
+}
+
+.highlight figcaption {
+  border-bottom:1px color-1 solid;
+  padding:10px 0
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media all and (max-width:720px) {
+
+  .branding {width:layout-width-2;}
+  
+  .description {width:layout-width-2;}
+
+  .pagination {width:layout-width-2;}
+
+  .footer-container {width:layout-width-2;}
+
+  .post-item { width:layout-width-2;}
+
+}
+
+@media all and (max-width:670px) {
+
+  .branding h1 {font-size:4em;}
+
+}
+
+@media all and (max-width:545px) {
+
+  .branding h1 {font-size:3em;}
+
+}
+
+@media all and (max-width:540px) {
+
+
+
+  .socialmedia-accounts {display:block;}
+
+  .footer-container .seperator {display:none;}
+
+}
+
+@media all and (max-width:507px) {
+
+  .branding h2 {font-size:1.2em;}
+
+  .post-item h2 {font-size:1.5em;}
+
+  .post .post-item h2 {font-size:1.5em;}
+
+}
+
+@media all and (max-width:420px) {
+
+  .branding h1 {font-size:2.5em;}
+
+}
+
+/* ==========================================================================
+   Helper Classes
+   ========================================================================== */
+
+.clr {clear:both;}
+
+.seperator {padding:0 10px;}
+
+
+/* ==========================================================================
+   Misc 
+   ========================================================================== */
+
+/* Resizing Font Awesome Icons
+   ==========================================================================*/
+
+.fa-2 {
+  font-size:1.2em;
+}
+
+/* An include for Syntax Highlighting CSS. This file was cleaned up from the Hexo Landscape theme
+   =============================================================================================== */
+
+@import "_partial/highlight"

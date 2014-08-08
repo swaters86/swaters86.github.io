@@ -1,0 +1,15 @@
+<%if (is_post()) { %>
+	<title>
+		<%= config.title %> - <%= post.title %>
+	</title>
+	<meta property="og:title" content="<%= post.title %>" />
+	<meta property="og:site_name" content="<%= config.title %>"/>
+	<meta property="og:url" content="<%= url_for(post.path) %>" />
+	<meta property="og:description" content="<%=: strip_html(post.content) | truncate_words:50 | append:'...' %>" />
+	<meta property="fb:app_id" content="300806496767058" />
+	<meta property="og:type" content="article" />
+<% } else { %>
+	<title>
+		<%= config.title %> - <%= config.subtitle %>
+	</title>
+<% } %>
