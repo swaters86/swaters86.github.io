@@ -13,3 +13,4 @@ This is the repo for my personal website which is still a work in progress.
 
 - Fix styles for headline tags 
 
+- Reorganize CSS properties in style.css, the order is off according to idiomatic CSS

@@ -45,7 +45,7 @@ Absolutely, unfortunately…  So far I found these:
 
 - I'm not sure if they are right for big sites, especially those that need to have a user base or a community. You might be better off sticking with Wordpress or another database-driven CMS for those types of websites. 
 
-- ALthought they are still popular, some static site generators like Hexo don't have  large community; so it's hard to find the right answers to problems sometimes. 
+- Although they are still popular, some static site generators like Hexo don't have  large community; so it's hard to find the right answers to problems sometimes. 
 
 
 If you have any questions about static site generators or if you think I missed a key point about them then please free to [let me know!](mailto:swaters86@gmail.com "Email Steven Waters")
