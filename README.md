@@ -7,6 +7,7 @@ You can access it from [swaters86.github.io](http://swaters86.github.io/) or [st
 
 ### To Do 
 
+- Fix og:url tag so it contains the full URL for an article page (so the Facebook debugger tool can scrape it)
 
 - Make it so ID attributes and values are not genrated for healdine tags (Hexo Issue)
 
@@ -21,3 +22,6 @@ You can access it from [swaters86.github.io](http://swaters86.github.io/) or [st
 - Make the responsive design better be decreasing font size in header and adding padding to article body 
 
 - Update CNAME record so the site is accessible from www.stevenwaters.com instead of stevenwaters.com and I need to add some sort of rewrite for this, I guess 
+
+- Add styles for block quotes 
+
