@@ -3,7 +3,7 @@ swaters86.github.io
 
 This is the repo for my personal website which is still a work in progress. 
 
-You can access it from swaters86.github.io or from stevenwaters.com
+You can access it from [swaters86.github.io](http://swaters86.github.io/) or from [stevenwaters.com](http://www.stevenwaters.com)
 
 ### To Do 
 
