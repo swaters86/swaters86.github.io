@@ -3,7 +3,7 @@ swaters86.github.io
 
 This is the repo for my personal website which is still a work in progress. 
 
-You can access it from [swaters86.github.io](http://swaters86.github.io/) or from [stevenwaters.com](http://www.stevenwaters.com)
+You can access it from [swaters86.github.io](http://swaters86.github.io/) or from [stevenwaters.com](http://stevenwaters.com)
 
 ### To Do 
 
@@ -18,3 +18,5 @@ You can access it from [swaters86.github.io](http://swaters86.github.io/) or fro
 - Reorganize CSS properties in style.css, the order is off according to idiomatic CSS
 
 - Make the responsive design better be decreasing font size in header and adding padding to article body 
+
+- Update CNAME record so the site is accessible from www.stevenwaters.com instead of stevenwaters.com and I need to add some sort of rewrite for this, I guess 
