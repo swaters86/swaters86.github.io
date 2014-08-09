@@ -10,6 +10,7 @@ tags:
 - Deployment 
 - Source Code 
 - _config.yml
+
 ---
 
 I figure I should write about this one, because it took me hours to figure out something that should have taken me 30 minutes to do. I'm also still relatively new to Git and GitHub so that didn't help my situation: The other night, while deploying my website files for this blog, I spent countless hours (probably about 6 hours) performing all kinds of commits, deletions, pushes, etc to the GitHub repo that this site is hosted in.  <!-- more -->
