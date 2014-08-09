@@ -27,8 +27,6 @@ I initially got this blog up and running on Github in a few minutes, however, I 
 
 - Lastly, I configured Hexo (see the _config.yml file) so it deploys to the Master branch. 
 
-
-
 This means all of the public files (The generated HTML, CSS, JS etc ) that Hexo deploys is deploying to the Master branch and I am able to commit any changes made to the source code to the "source_code" branch thus no versioning conflicts or overwriting of files occur. 
 
 If you want to keep your local repo in sync with your remote repo then I would suggest switching to the repo and pulling the files that were deployed to it by Hexo and then switching to your branch for the source code and making commits from there. 
