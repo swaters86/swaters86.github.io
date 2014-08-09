@@ -31,6 +31,6 @@ This means all of the public files (The generated HTML, CSS, JS etc ) that Hexo 
 
 If you want to keep your local repo in sync with your remote repo then I would suggest switching to the repo and pulling the files that were deployed to it by Hexo and then switching to your branch for the source code and making commits from there. 
 
-I initially experimented with creating a directory within the Master branch and I somehow thought I could initialize a branch inside of that directory yadda yadda and then I realized Git and other versioning control software work like that and the process was getting too complicated. 
+I initially experimented with creating a directory within the Master branch and I somehow thought I could initialize a branch inside of that directory and I then realized Git and other versioning control software work like that and the process was getting too complicated. 
 
 Hopefully that helps. If you have any questions then please feel free to leave a comment here. If you think I could have achieved the above in a much simpler way then I would love to hear from you! 
