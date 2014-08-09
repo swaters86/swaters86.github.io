@@ -45,7 +45,7 @@ Absolutely, unfortunately…  So far I found these:
 
 - I'm not sure if they are right for big sites, especially those that need to have a user base or a community. You might be better off sticking with Wordpress or another database-driven CMS for those types of websites. 
 
-- Although they are still popular, some static site generators like Hexo don't have  large community; so it's hard to find the right answers to problems sometimes. 
+- Despite their popularity, some static site generators like Hexo don't have a large community, so it's hard to find the right answers to problems sometimes. 
 
 - Atleast for Hexo, there's no way to create a predefined list of categories and tags to use in post. You have to make sure tags and categories use the same capitalization throughout your post, Otherwise,the content won't be found together when a user clicks on one of the category or tag links.  
 
