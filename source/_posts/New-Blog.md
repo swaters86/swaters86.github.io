@@ -48,7 +48,7 @@ Absolutely, unfortunately…  So far I found these:
 
 - Despite their popularity, some static site generators like Hexo don't have a large community, so it's hard to find the right answers to problems sometimes. 
 
-- Atleast for Hexo, there's no way to create a predefined list of categories and tags to use in post. You have to make sure tags and categories use the same capitalization throughout your post, Otherwise,the content won't be found together when a user clicks on one of the category or tag links.  
+- There's no way to create a predefined list of categories and tags to use in post, at least this is the case when you use Hexo. You have to make sure tags and categories use the same capitalization throughout your post, Otherwise,the content won't be found together when a user clicks on one of the category or tag links.  
 
 
 If you have any questions about static site generators or if you think I missed a key point about them then please free to [let me know!](mailto:swaters86@gmail.com "Email Steven Waters")

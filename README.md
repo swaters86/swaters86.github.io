@@ -26,3 +26,5 @@ You can access it from [swaters86.github.io](http://swaters86.github.io/) or [st
 - Add styles for block quotes 
 
 - Fix Mime type for CSS file: Resource interpreted as Stylesheet but transferred with MIME type text/plain: "http://normalize-css.googlecode.com/svn/trunk/normalize.css". 
+
+- Create styles for emphazing text such as bold, highlight in red, etc

@@ -13,7 +13,7 @@ tags:
 
 ---
 
-I figure I should write about this one, because it took me hours to figure out something that should have taken me 30 minutes to do. I'm also still relatively new to Git and GitHub so that didn't help my situation: The other night, while deploying my website files for this blog, I spent countless hours (probably about 6 hours) performing all kinds of commits, deletions, pushes, etc to the GitHub repo that this site is hosted in.  <!-- more -->
+I figure I should write about this one, because it took me hours to figure out something that should have taken me 30 minutes to do. I'm also still relatively new to Git and GitHub so that didn't help my situation. The other night, while deploying my website files for this blog, I spent countless hours performing all kinds of commits, deletions, pushes, etc to the GitHub repo that this site is hosted in.  <!-- more -->
 
 I initially got this blog up and running on Github in a few minutes, however, I noticed that the source files I pushed were getting replaced by the public files that Hexo deploys. I set Hexo to deploy to the Master branch and, for some reason, the Git operation behind the deployment script likes to delete all of the files in the repo and replace them with the newly created files. Please note, I might be totally wrong about how Hexo works in this manner, I just noticed this was causing a versioning conflict - that and mixing public files with the source code was making the repo look messy. 
 
