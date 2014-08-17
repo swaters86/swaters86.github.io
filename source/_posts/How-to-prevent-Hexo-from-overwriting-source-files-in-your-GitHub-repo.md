@@ -10,16 +10,15 @@ tags:
 - Deployment 
 - Source Code 
 - _config.yml
-
 ---
 
- I decided to write about this because it took me hours to figure out something that should have taken me 30 minutes to do. I'm also still relatively new to Git and GitHub so that didn't help my situation. The other night, while deploying my website files for this blog, I spent countless hours performing all kinds of commits, deletions, pushes, etc to the GitHub repo that this site is hosted in.  <!-- more -->
+I decided to write about this because it took me hours to figure out something that should have taken me 30 minutes to do. I'm also still relatively new to Git and GitHub so that didn't help my situation. The other night, while deploying my website files for this blog, I spent countless hours performing all kinds of commits, deletions, pushes, etc to the GitHub repo that this site is hosted in.  <!-- more -->
 
 I initially got this blog up and running on Github in a few minutes, however, I noticed that the source files I pushed were getting replaced by the public files that Hexo deploys. I set Hexo to deploy to the Master branch and, for some reason, the Git operation behind the deployment script likes to delete all of the files in the repo and replace them with the newly created files. Please note, I might be totally wrong about how Hexo works in this manner, I just noticed this was causing a versioning conflict - that and mixing public files with the source code was making the repo look messy. 
 
 ### Here's what I did to get around the problem 
 
-- After attempting to remove / push files to my remote GitHub repo, I ended up deleting it so I could start fresh. I think there their are commands out there that let you reset Git repos (yes I'm going to laugh at this 5 years from now) however I wasn't successful in getting to the point I wanted with my local and remote repos. 
+- After attempting to remove and push files to my remote GitHub repo, I ended up deleting it so I could start fresh. I think there are commands out there that let you reset Git repos (yes I'm going to laugh at this 5 years from now) however I wasn't successful in getting to the point I wanted with my local and remote repos. 
 
 - I then created a branch for my new repo called "source_code" - You can actually name this branch anything you want. 
 
