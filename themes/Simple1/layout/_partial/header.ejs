@@ -16,6 +16,25 @@
 	  ga('create', 'UA-10632070-2', 'auto');
 	  ga('send', 'pageview');
   </script>
+  <script type="text/javascript"> 
+  
+	<% if(is_post()) { %>
+	post = 0;
+	<% } else { %>
+	post = 1;
+	<% } %>
+
+
+	window.onload = function(){
+			
+	  		var descriptionContainer = document.body.querySelector('.description');
+
+	  		if ( post === 0 ) {
+	  			descriptionContainer.style.display='none';
+	  		}
+		}
+
+  </script>
 </head> 
 <body>
 	<section class="strip">
