@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+	<title>
+		Steven Waters - How to prevent Hexo from overwriting source files in your GitHub repo
+	</title>
+	<meta property="og:title" content="How to prevent Hexo from overwriting source files in your GitHub repo" />
+	<meta property="og:site_name" content="Steven Waters"/>
+	<meta property="og:url" content="/2014/08/09/How-to-prevent-Hexo-from-overwriting-source-files-in-your-GitHub-repo/" />
+	<meta property="og:description" content="I decided to write about this because it took me hours to figure out something that should have taken me 30 minutes to do. I’m also still relatively new to Git and GitHub so that didn’t help my situation. The other night, while deploying my website files for this blog,..." />
+	<meta property="fb:app_id" content="300806496767058" />
+	<meta property="og:type" content="article" />
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo:700" />
+  <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-10632070-2', 'auto');
+	  ga('send', 'pageview');
+  </script>
+  <script type="text/javascript"> 
+  
+	
+	post = 0;
+	
+
+
+	window.onload = function(){
+			
+	  		var descriptionContainer = document.body.querySelector('.description');
+
+	  		if ( post === 0 ) {
+	  			descriptionContainer.style.display='none';
+	  		}
+		}
+
+  </script>
+</head> 
+<body>
+	<section class="strip">
+		<!-- This strip does nothing...yet muhahahah *cough* *cough* --> 
+	</section> <!-- .strip --> 
+	<div class="container">
+		<header class="masthead" role="banner">
+			<div class="branding">
+				<h1>
+					<a href="/" title="">
+						Steven Waters
+					</a>
+				</h1>
+				<h2>
+					Knows a thing or two about the interwebs
+				</h2>
+			</div> <!-- .branding -->
+			<div class="description">
+				<p>
+					Hello, my name is Steven Waters, but you can call me Steve. I&#39;m a web developer living in Tampa. I like to code in HTML5, CSS3, and JavaScript. I&#39;m also pretty good at PHP, NEWSCYCLE Digital, Wordpress and I like to dabble in Express.js, MongoDB, and Node.js!
+				</p>
+			</div> <!-- .description --> 
+		</header> <!-- .masthead -->
+
+	<div class="post" role="main">
+	<article class="post-item">
+	
+		
+  
+    <h2>
+      How to prevent Hexo from overwriting source files in your GitHub repo
+    </h2>
+  
+ 
+	
+	
+	
+		<ul class="post-meta">
+			<li>
+				<label>Posted On:</label> 
+				<a href="/2014/08/09/How-to-prevent-Hexo-from-overwriting-source-files-in-your-GitHub-repo/">
+  <time datetime="2014-08-09T05:23:00.000Z">
+  	Aug 9 2014
+  </time>
+</a>
+			</li>
+			<li style="display:none">
+				<label>Categorized As:</label> 
+				
+    <a class="post-category-link" href="/categories/Hexo/">Hexo</a>
+
+			</li>
+			<li>
+				<label>Tagged As:</label>
+				
+  <a class="post-tag-link" href="/tags/Deployment/">Deployment</a>, <a class="post-tag-link" href="/tags/Git/">Git</a>, <a class="post-tag-link" href="/tags/GitHub/">GitHub</a>, <a class="post-tag-link" href="/tags/Hexo/">Hexo</a>, <a class="post-tag-link" href="/tags/Source-Code/">Source Code</a>, <a class="post-tag-link" href="/tags/Version-Control/">Version Control</a>, <a class="post-tag-link" href="/tags/_configyml/">_config.yml</a>
+ 
+			</li>
+			<li>
+				<label>Share On:</label>
+				<ul class="share">
+		    		<li>
+		    			<a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http://stevenwaters.com/2014/08/09/How-to-prevent-Hexo-from-overwriting-source-files-in-your-GitHub-repo/', 'Share on Facebook', 'width=626,height=436'); return false;"><i class="fa fa-facebook-square fa-2"></i></a> 
+		    		</li>
+		    		<li>
+		    			<a href="#" onclick="window.open('https://twitter.com/share?text=How to prevent Hexo from overwriting source files in your GitHub repo&via=stevenwaters86', 'Share on Twitter', 'width=626,height=436'); return false;"><i class="fa fa-twitter-square fa-2"></i></a>
+		    		</li>	
+		    	</ul>
+			</li>
+		</ul> <!-- .post-meta -->
+	
+	<p>I decided to write about this because it took me hours to figure out something that should have taken me 30 minutes to do. I’m also still relatively new to Git and GitHub so that didn’t help my situation. The other night, while deploying my website files for this blog, I spent countless hours performing all kinds of commits, deletions, pushes, etc to the GitHub repo that this site is hosted in.  <a id="more"></a></p>
+<p>I initially got this blog up and running on Github in a few minutes, however, I noticed that the source files I pushed were getting replaced by the public files that Hexo deploys. I set Hexo to deploy to the Master branch and, for some reason, the Git operation behind the deployment script likes to delete all of the files in the repo and replace them with the newly created files. Please note, I might be totally wrong about how Hexo works in this manner, I just noticed this was causing a versioning conflict - that and mixing public files with the source code was making the repo look messy. </p>
+<h3 id="Here’s_what_I_did_to_get_around_the_problem">Here’s what I did to get around the problem</h3>
+<ul>
+<li><p>After attempting to remove and push files to my remote GitHub repo, I ended up deleting it so I could start fresh. I think there are commands out there that let you reset Git repos (yes I’m going to laugh at this 5 years from now) however I wasn’t successful in getting to the point I wanted with my local and remote repos. </p>
+</li>
+<li><p>I then created a branch for my new repo called “source_code” - You can actually name this branch anything you want. </p>
+</li>
+<li><p>I then committed all of the source code files for this blog to that branch. In addition, I let Hexo generate a .deploy and public folder in this branch. You can either delete these before commiting changes in this branch or you can just commit these files / folders as you make commits from this branch. </p>
+</li>
+<li><p>Lastly, I configured Hexo (see the _config.yml file) so it deploys to the Master branch. </p>
+</li>
+</ul>
+<p>This means all of the public files (The generated HTML, CSS, JS etc) that Hexo deploys is deploying to the Master branch and I am able to commit any changes made to the source code to the “source_code” branch. With the above configuration no versioning conflicts or overwriting of files will occur. </p>
+<p>If you want to keep your local repo in sync with your remote repo then I would suggest switching to the repo and pulling the files that were deployed to it by Hexo and then switching to your branch for the source code and making commits from there. </p>
+<p>I initially experimented with creating a directory within the Master branch and I somehow thought I could initialize a branch inside of that directory and I then realized Git and other versioning control software work like that and the process was getting too complicated. </p>
+<p>Hopefully that helps. If you have any questions, then please feel free to leave a comment here. If you think I could have achieved the above in a much simpler way then I would love to hear from you! </p>
+
+	
+		<!-- Start Disqus Thread Container -->
+		<div id="disqus_thread"></div>
+	    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	    <!-- End Disqus Thread Container -->
+    
+    
+    	
+<nav class="post-nav">
+  
+    <a href="/2014/12/10/Another-post-about-Static-Site-Generators/" class="post-nav-link-wrap">
+      <span class="post-nav-title">
+        
+          &laquo; Another post about Static Site Generators 
+        
+      </span> <!-- .post-nav-title-->
+    </a>
+   <strong class="seperator">|</strong>
+      
+  
+    <a href="/2014/08/04/New-Blog/" class="post-nav-link-wrap">
+      <span class="post-nav-title">
+        About My New Site &raquo;
+      </span> <!-- .post-nav-title -->
+      <div class="clr"></div>
+    </a>
+  
+</nav> <!-- .post-nav -->
+
+    
+	
+</article> <!-- .post-item -->
+
+
+</div> <!-- .post -->
+	</div> <!-- .wrapper --> 
+	<div class="footer" role="contentinfo">
+		<div class="footer-container">
+			Slightly responsive and powered by <a href="http://hexo.io/">Hexo</a> 
+			<span class="seperator">|</span>
+			<ul class="socialmedia-accounts">
+
+				<strong>Find me on:</strong> 
+				<li> 
+					<a href="https://github.com/swaters86" title="Visit Steven Water' GitHub Account">
+					<i class="fa fa-github"></i> 
+					</a>
+				</li>
+				<li> 
+					<a href="http://www.linkedin.com/in/stevenwaters" title="Visit Steven Waters' LinkedIn Account">
+					<i class="fa fa-linkedin-square"></i> 
+					</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/stevenwaters86" title="Visit Steven Waters' Twitter Account">
+					<i class="fa fa-twitter-square"></i> 
+					</a>
+				</li>
+			</ul> <!-- .socialmedia-accounts -->
+		</div> <!-- .footer-container -->
+	</div> <!-- .footer -->
+	
+</body>
+</html>
