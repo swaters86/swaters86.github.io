@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>NEWSCYCLE Solutions Customer Portal</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<style type="text/css">
+	/*** 
+	Author: Steven Waters
+	Date: 201401... 
+	Frameworks: 
+	PureCSS: http://purecss.io; 
+	FontAwesome: http://fontawesome.io;
+	NEWSCYCLE Solutions Color Scheme: 
+	Blue  : #53c4e4;
+	Grey1 : #474a51;
+	Grean : #b6d440;
+	Grey2 : #7d8285;
+	***/
+	
+	body {
+	background:#efeff1;
+	}
+
+	p {
+		font-size:1.0em;
+	}
+
+	#wrapper {
+		width:1023px;
+		margin:0 auto;
+	}
+
+	#hamburger-nav {
+		visibility: hidden;
+	}
+
+	#splash {
+		background:#efefef;
+		height:120px;
+	}
+
+	#slogan {
+		background:#53c4e4;
+		
+	}
+
+	#slogan h2 {
+		color:#fff;
+	}
+
+	#welcome-message {
+		float:left;
+		width:50%;
+	}
+
+	#portal-training {
+		float:right;
+		width:50%;
+	}
+
+	#featured-video-thumb {
+		float:left;
+		background:#ccc;
+		width:75px;
+		height:75px;
+	}
+
+	#featured-video-meta {
+		float:right;
+		width:200px;
+		padding:10px;
+	}
+
+
+	/*** Helper Classes ***/ 
+
+	.l-box {
+        padding: 1em;
+        background:#fff;
+        -moz-box-shadow: 2px 2px 1px #333;
+				-webkit-box-shadow: 2px 2px 1px #333;
+				box-shadow: 2px 2px 1px #333;
+				margin-right:10px;
+    }
+
+    .clr {
+    	clear:both;
+    	line-height: 1em;
+    }
+
+    /*** Media Queries ***/ 
+
+	@media (max-width: 320px) and (max-width:480px) {
+
+		#wrapper {
+			width:320px;
+			border:1px red solid;
+		}
+
+		#logo {
+			
+		}
+
+	}
+
+
+	@media (min-width: 320px) and (max-width:850px) {
+
+		#hamburger-nav {
+			visibility: visible;
+			border:1px green solid;
+		}
+
+		#nav {
+			display:none;
+			visibility: hidden;
+		}
+	}
+
+	
+	/*div {border:1px blue solid;}*/
+	/*
+	.pure-u-1:nth-child(1) {background:#666}
+	.pure-u-1:nth-child(2) {background:#ccc}
+	.pure-u-1:nth-child(3) {background:#ddd}
+	.pure-u-1-3:nth-child(4) {background:#333}
+	.pure-u-2-3 {background:#efefef}
+	.pure-u-1-3:nth-child(1) {background:#666}
+	.pure-u-1-3:nth-child(2) {background:#ccc}
+	.pure-u-1-3:nth-child(3) {background:#ddd}
+	.pure-u-1-3:nth-child(4) {background:#333}
+	*/
+
+	#header {background:#efeff1;}
+
+</style>
+</head> 
+<body>
+	<div id="wrapper">
+		<div class="pure-g-r">
+			<div class="pure-u-1-3" id="header">
+				<img id="logo" src="logo.png" alt=""/>
+			</div>
+			<div class="pure-u-2-3">
+				<div id="hamburger-nav">
+					<i class="fa fa-bars"></i>
+				</div>
+			</div>
+		</div>
+		<div class="pure-g-r">
+			<div class="pure-u-1">
+				<div id="nav" class="pure-menu pure-menu-open pure-menu-horizontal">
+				    <ul>
+				        <li><a href="#">Home</a></li>
+				        <li class="pure-menu-selected"><a href="#">Knowledgebase</a></li>
+				        <li><a href="#">Cases</a></li>
+				        <li><a href="#">Documentation</a></li>
+				        <li><a href="#">Invoices</a></li>
+				        <li><a href="#">User Group</a></li>
+				    </ul>
+				</div>
+			</div>
+			<div class="pure-u-1" id="splash">
+				
+			</div>
+			<div class="pure-u-1" id="slogan">
+				<h2><em>Accelerating</em> Your Future</h2>
+			</div>
+		</div>
+		<div class="pure-g-r">
+			<div class="pure-u-2-3">
+				<div class="l-box">
+					<div id="welcome-message">
+							<!-- Extra DIV tags are for padding, this is recommended by PureCSS.io --> 
+							<h3>Welcome to the NEWSCYCLE Solutions Customer Portal</h3>
+				    		<p>
+				    			Cras eleifend quis magna et sodales. Fusce accumsan euismod risus, in semper massa. Praesent egestas dui quam, in vestibulum ligula lobortis eu. Nunc placerat faucibus posuere. Mauris dignissim neque arcu, eu consectetur odio interdum at. Vivamus pellentesque arcu ac blandit aliquet. Maecenas sollicitudin egestas nisl quis gravida. Mauris lacinia, lectus at molestie vestibulum, ipsum ante varius turpis, a aliquam mauris erat ac est. Mauris iaculis quis nisl eget dapibus. Quisque volutpat est in arcu luctus interdum. Mauris erat mauris, fringilla at quam a, sollicitudin rutrum elit. Nunc rhoncus purus nec ultrices cursus. Etiam vitae enim massa. Praesent vitae lobortis lectus. Nullam id massa justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+				    		</p>
+		    	</div> <!-- #welcome-message --> 
+		    	<div id="portal-training">
+	    				<div id="featured-video">
+	    					<img id="featured-video-thumb" src="" alt="" /> 
+	    					<div id="featured-video-meta">
+			    				<h3>Featured Video</h3>
+			    				<h4>Hi, my name is Preston McKenzie</h4> 
+					    		<p>
+					    			Maecenas sollicitudin egestas nisl quis gravida. Mauris lacinia, 
+					    			lectus at molestie vestibulum, ipsum ante varius turpis,
+					    			a aliquam mauris erat ac est.
+					    		</p>
+				    		</div> <!-- #featured-video-meta -->
+				    		<div class="clr"></div>
+			    		</div> <!-- #featured-video -->
+	    				<div id="videos-list">
+		    				<h3>More Videos</h3>
+				    		<ul>
+				    			<li>
+				    				<a href="#">Video 1</a> 
+				    			</li>
+				    			<li>
+				    				<a href="#">Video 2</a> 
+				    			</li>
+				    			<li>
+				    				<a href="#">Video 3</a> 
+				    			</li>
+				    			<li>
+				    				<a href="#">Video 4</a> 
+				    			</li>
+				    		</ul>
+			    		</div> <!-- #videos-list --> 
+	    		</div><!-- #portal-training --> 
+	    		<div class="clr"></div>
+	    	</div>
+			</div>
+			<div class="pure-u-1-3">
+				<p>Row 1 Column 2</p>
+			</div>
+		</div>
+		<div class="pure-g-r">
+			<div class="pure-u-1-3">
+				<p>Row 2 Column 1</p>
+			</div>
+			<div class="pure-u-1-3">
+				<p>Row 2 Column 2</p>
+			</div>
+			<div class="pure-u-1-3">
+				<p>Row 2 Column 3</p>
+			</div>
+		</div>
+		<div class="pure-g-r">
+			<div class="pure-u-1">
+				<p>Footer</p>
+			</div>
+		</div>
+	</div><!-- #wrapper --> 
+</body>
+</html>
+
+<!--
+		    	<div class="pure-u-1-3">
+		    		<h3>Welcome to the NEWSCYCLE Solutions Customer Portal</h3>
+		    		<p>
+		    			Cras eleifend quis magna et sodales. Fusce accumsan euismod risus, in semper massa. Praesent egestas dui quam, in vestibulum ligula lobortis eu. Nunc placerat faucibus posuere. Mauris dignissim neque arcu, eu consectetur odio interdum at. Vivamus pellentesque arcu ac blandit aliquet. Maecenas sollicitudin egestas nisl quis gravida. Mauris lacinia, lectus at molestie vestibulum, ipsum ante varius turpis, a aliquam mauris erat ac est. Mauris iaculis quis nisl eget dapibus. Quisque volutpat est in arcu luctus interdum. Mauris erat mauris, fringilla at quam a, sollicitudin rutrum elit. Nunc rhoncus purus nec ultrices cursus. Etiam vitae enim massa. Praesent vitae lobortis lectus. Nullam id massa justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.
+		    		</p>
+		    	</div> 
+		    	<div class="pure-u-1-3">
+		    		<h3>Portal Training</h3>
+		    		<div style="background:#ccc;width:75px;height:75px;float:left">
+		    		</div>
+		    		<div class="video" style="width:200px;float:right">
+		    		<h4>Hi, my name is Preston McKenzie</h4> 
+		    		<p>
+		    			Maecenas sollicitudin egestas nisl quis gravida. Mauris lacinia, 
+		    			lectus at molestie vestibulum, ipsum ante varius turpis,
+		    			a aliquam mauris erat ac est.
+		    		</p>
+		    		</div>
+		    		<div style="clear:both;"></div>
+		    		<h3>More Videos</h3>
+		    		<ul>
+		    			<li>
+		    				<a href="#">Video 1</a> 
+		    			</li>
+		    			<li>
+		    				<a href="#">Video 2</a> 
+		    			</li>
+		    			<li>
+		    				<a href="#">Video 3</a> 
+		    			</li>
+		    			<li>
+		    				<a href="#">Video 4</a> 
+		    			</li>
+		    		</ul>
+		    	</div> 
+	        <div class="pure-u-1-3">
+	        	<h3>News &amp; Announcements</h3>
+	        </div>
+-->
